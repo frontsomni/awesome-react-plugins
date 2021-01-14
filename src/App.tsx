@@ -7,7 +7,7 @@ function App() {
     <div className="app container pt-3">
       <Switch>
         {
-          router.map(route => <Route path={route.path} component={route.component} />)
+          router.map(route => <Route key={route.path} path={route.path} component={route.component} />)
         }
       </Switch>
     </div>
