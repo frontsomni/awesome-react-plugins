@@ -9,7 +9,6 @@ export default function Home() {
     async function getPlugins() {
       let res = await fetch(DATAURL)
       let data = await res.json()
-      console.log(data)
       setPluginsList(data)
     }
     getPlugins()
